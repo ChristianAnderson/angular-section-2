@@ -1,0 +1,6 @@
+p {
+    border-color: gray;
+    border: 1px solid gray;
+    min-height: 40px;
+    padding: 10px;
+}

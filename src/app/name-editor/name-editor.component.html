@@ -1,0 +1,10 @@
+<p>
+    <label for="input-child-one">
+        Input First Child:
+        <input type="text" name="input-child-one" [(ngModel)]="value" (ngModelChange)="updateValue()">
+    </label>
+    <br>
+    <label for="">
+        text from first child: {{ receivedValue }}
+    </label>    
+</p>
