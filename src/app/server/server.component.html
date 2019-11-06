@@ -1,0 +1,4 @@
+<div>
+    <p *ngIf="!serverCreated" [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus === 'online'}"> {{ serverCreationStatus }}</p>
+    <p *ngIf="serverCreated" [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus === 'online'}">Server {{ serverName }} was created</p>
+</div>

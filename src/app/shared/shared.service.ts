@@ -1,4 +1,5 @@
 import { BehaviorSubject } from 'rxjs';
+// Reactive Extensive JS
 
 export class SharedService{
     private value = new BehaviorSubject(new String);

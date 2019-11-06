@@ -9,11 +9,14 @@ import { SharedService } from '../shared/shared.service';
 export class NameEditorComponent implements OnInit {
   private value: String;
   private receivedValue : String;
-
+  mockData : String;
+  
   constructor(private sharedService: SharedService) { }
 
   ngOnInit() {
     this.value = "";
+    this.mockData = "Stark";
+
     this.sharedService.secondCurrentValue.subscribe(value => this.receivedValue = value);
   }
 
